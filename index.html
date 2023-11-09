@@ -2,27 +2,180 @@
 <html lang="en">
 
 <head>
-    <style>
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>odinprojectwebsite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>YTlandingpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'open sans', sans-serif;
+        }
+
+        header {
+            height: 100px;
+            background-color: #1f2937;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .logo {
+            padding-right: 400px;
+            padding-top: 10px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 0 20px;
+            display: inline-block;
+        }
+
+        main {
+            display: flex;
+            height=100vh;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #1f2937;
+        }
+
+        .cta {
+            background-color: #3882f6;
+            padding: 3px 2px;
+            border-radius: 3px;
+            margin: 5px 10px;
+            color: white;
+        }
+
+
+        .heroimage {
+            width: 250px;
+            height: auto;
+            margin: 5px 0;
+            border-radius: 10px;
+        }
+
+        .heroheading {
+            margin: 0 10px;
+            color: white
+        }
+
+        .description {
+            font-size: 15px;
+            color: white;
+            margin: 0 12px;
+        }
+
+        .portion2_5 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 5vw 5vh;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box1,.box2,.box3,.box4 {
+            display: block;
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            border-radius: 10px;
+            margin:auto;
+        }
+
+
+        .portion3 {
+            background-color: #e5e7eb;
+            padding: 10vw 10vh;
+        }
+
+        .quote {
+            font-size: 36px;
+            font-style: italic;
+        }
+
+        .portion4 {
+            display: flex;
+            background-color: white;
+            padding: 10vw 10vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {display:flex;
+            background-color: #3882f6;
+            padding: 5vw 5vh;
+            border-radius: 10px;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="tophalf">
-        <div class="navbar">
-            <p>My Website</p>
+    <header>
+        <div class="logo"><img src="./logo.png" alt="logo" width="150px">
+
+        </div>
+        <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Contact</li>
             </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="portion1">
+            <h1 class="heroheading">This is my project</h1>
+            <p class="description">I created this website for the odin project assignment</p>
+            <button class="cta">Click me</button>
+        </div>
+        <div class="portion2">
+            <img src="./image.png" class="heroimage" alt="Hero image">
+        </div>
+
+
+    </main>
+    <div class="portion2_5">
+        <img src="./box1.jpg" class="box1"></img>
+        <img src="./box2.jpg" class="box2"></img>
+        <img src="./box3.jpg" class="box3"></img>
+        <img src="./box4.jpg" class="box4"></img>
+
+    </div>
+    <div class="portion3">
+        <h1>Inspiring quote</h1>
+        <p class="quote">“We cannot solve problems with the kind of thinking we employed when we came up with them.” —
+            Albert
+            Einstein</p>
+    </div>
+    <div class="portion4">
+        <div class="footer">
+            <h1>Call to Action</h1>
+            <p>It's time to click this button for no reason</p>
+            <button class="lastbutton">Click again</button>
         </div>
     </div>
 
