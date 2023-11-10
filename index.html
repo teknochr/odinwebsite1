@@ -92,16 +92,21 @@
             align-items: center;
         }
 
-        .box1,.box2,.box3,.box4 {
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
             display: block;
             width: 200px;
             height: 200px;
             justify-content: center;
             align-items: center;
-            background-color: yellow;
             border-radius: 10px;
-            margin:auto;
+            margin: auto;
         }
+        figcaption{text-align: center;
+        padding-top: 5px;
+    font-style:italic;}
 
 
         .portion3 {
@@ -122,7 +127,8 @@
             align-items: center;
         }
 
-        .footer {display:flex;
+        .footer {
+            display: flex;
             background-color: #3882f6;
             padding: 5vw 5vh;
             border-radius: 10px;
@@ -159,10 +165,19 @@
 
     </main>
     <div class="portion2_5">
-        <img src="./box1.jpg" class="box1"></img>
-        <img src="./box2.jpg" class="box2"></img>
-        <img src="./box3.jpg" class="box3"></img>
-        <img src="./box4.jpg" class="box4"></img>
+        <figure>
+            <img src="./box1.jpg" class="box1"></img>
+            <figcaption>Nuts</figcaption>
+        </figure>
+        <figure><img src="./box2.jpg" class="box2"></img>
+            <figcaption>Prism</figcaption>
+        </figure>
+        <figure><img src="./box3.jpg" class="box3"></img>
+            <figcaption>Egg</figcaption>
+        </figure>
+        <figure><img src="./box4.jpg" class="box4"></img>
+            <figcaption>Window</figcaption>
+        </figure>
 
     </div>
     <div class="portion3">
